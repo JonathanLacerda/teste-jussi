@@ -38,8 +38,8 @@ function Banner () {
 								A Jüssi é especialista na criação de lojas usando a plataforma VTEX. Precisa criar sua loja ou migrar de plataforma?
 							</h3>
 							<Button
-								className="teste"
-								label="teste02"
+								className="btn__cta"
+								label="Veja nossas soluções"
 							/>
 						</div>
 						<div className="banner__products grid__col-6">
@@ -47,11 +47,11 @@ function Banner () {
 								images.map((value) => {
 									return <>
 										<Shelf
-											toSell={false}
+											type="banner"
 											image={value.image}
 										>
 											<Button
-													className="teste"
+													className="btn__shelfBanner"
 													label={value.label}
 												/>
 										</Shelf>

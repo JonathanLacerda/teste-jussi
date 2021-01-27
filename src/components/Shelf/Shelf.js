@@ -1,10 +1,16 @@
 import React, { Component } from "react";
+import './Shelf.scss';
 
 class Shelf extends Component {
+
 	render() {
 		return <>
-			<div className={!this.props.type? "banner__product" : "banner__shelf"}>
-				<img src={this.props.image} alt=""/>
+			<div className={"shelf__" + this.props.type}>
+				<img
+					src={this.props.image}
+					className="shelf__image"
+					alt=""
+				/>
 				{this.props.children}
 			</div>
 		</>;
