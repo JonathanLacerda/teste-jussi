@@ -66,17 +66,17 @@ $pink: #EE0E7D;
     }
 }
 
-::placeholder {
+.header__search-input::placeholder {
     color:$pink;
     font-size: 16px;
 }
 
-:-ms-input-placeholder {
+.header__search-input:-ms-input-placeholder {
     color:$pink;
     font-size: 16px;
 }
 
-::-ms-input-placeholder {
+.header__search-input::-ms-input-placeholder {
     color:$pink;
     font-size: 16px;
 }

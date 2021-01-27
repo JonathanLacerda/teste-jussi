@@ -1,12 +1,15 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import Button from '../Button/Button'
+
 import './Newsletter.scss';
 class Newsletter extends Component {
 
 	constructor(props) {
 		super(props);
 		this.state = {
-			value: '',
-			validEmail: false
+            value: '',
+            validEmail: false,
+            success: false
 		};
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,31 +21,38 @@ class Newsletter extends Component {
 		let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 		if(re.test(this.state.value)){
-			console.log('email válido');
-		}
-		else{
-			console.log('email inválido');
-		}
+			this.setState({validEmail: true});
+        }
+
+        if(this.state.value.length < 1){
+            this.setState({success: false});
+        }
 	}
 
 	handleSubmit(event) {
-		alert('Um nome foi enviado: ' + this.state.value);
+        this.setState({success: this.state.validEmail})
 		event.preventDefault();
-	}
+    }
 
 	render() {
 		return (
 			<form
-				className="newsletter"
-				onSubmit={this.handleSubmit}>
+                className="newsletter"
+                onSubmit={this.handleSubmit}>
 				<input
+                    className="newsletter__input"
 					type="email"
 					value={this.state.value}
-					onChange={this.handleChange}
+                    onChange={this.handleChange}
+                    placeholder="Digite seu e-mail"
+                    onFocus={this.handleFocus}
 				/>
-				<input type="submit" value="CADASTRAR" />
-				<div className="newsletter__success">
-					{this.state.value}
+                <Button
+                    className="btn__newsletter"
+                    label="CADASTRAR"
+                />
+				<div className={this.state.success ? 'newsletter__success in' : 'newsletter__success'}>
+					<b>Sucesso!</b> Você novidades no seu email a partir de hoje, fiquei ligado!
 				</div>
 			</form>
 		);

@@ -11,7 +11,7 @@ function Footer() {
 		<div className="container">
 			<div className="footer__newsletter">
 				<div className="footer__title">
-					receba novidades da nossa áreade produtos digitais.
+                    receba novidades da nossa área de produtos digitais.
 				</div>
 				<Newsletter />
 			</div>
