@@ -1,0 +1,42 @@
+[
+    {
+        "image" : "https://via.placeholder.com/100/F2F2F2/000000/?text=P1",
+        "name" : "Nome do produto #1",
+        "description" : "Descrição do produto #1",
+        "features": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ]
+    },
+    {
+        "image" : "https://via.placeholder.com/100/F2F2F2/000000/?text=P2",
+        "name" : "Nome do produto #2",
+        "description" : "Descrição do produto #2",
+        "features": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ]
+    },
+    {
+        "image" : "https://via.placeholder.com/100/F2F2F2/000000/?text=P3",
+        "name" : "Nome do produto #3",
+        "description" : "Descrição do produto #3",
+        "features": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ]
+    },
+    {
+        "image" : "https://via.placeholder.com/100/F2F2F2/000000/?text=P4",
+        "name" : "Nome do produto #4",
+        "description" : "Descrição do produto #4",
+        "features": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ]
+    }
+]

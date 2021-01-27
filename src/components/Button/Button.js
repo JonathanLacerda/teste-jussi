@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Button.scss';
-class Button extends Component {
-	render() {
-		return <>
+
+function Button(props) {
+	return(
+		<>
 			<button
-				className={this.props.className}>
-				{this.props.label}
+				className={props.className}>
+				{props.label}
 			</button>
 		</>
-	}
+	)
 }
 
 export default Button;

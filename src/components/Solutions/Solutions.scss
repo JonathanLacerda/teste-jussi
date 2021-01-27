@@ -1,0 +1,27 @@
+$black: #000000;
+$white: #FFFFFF;
+$green: #03FFA5;
+$grey: #F2F2F2;
+
+
+.solutions{
+    margin-top: 55px;
+
+    &__title{
+        color: $black;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0 0 24px 30px;
+        text-transform: uppercase;
+        position: relative;
+
+        &:before{
+            content:'//';
+            color: $green;
+            font-weight: bold;
+            left: -35px;
+            text-transform: uppercase;
+            position: absolute;
+        }
+    }
+}

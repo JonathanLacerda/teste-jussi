@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from '../Button/Button';
 import Shelf from '../Shelf/Shelf';
 import './Banner.scss';
@@ -51,9 +51,9 @@ function Banner () {
 											image={value.image}
 										>
 											<Button
-													className="btn__shelfBanner"
-													label={value.label}
-												/>
+												className="btn__shelfBanner"
+												label={value.label}
+											/>
 										</Shelf>
 									</>
 								})

@@ -1,0 +1,59 @@
+$black: #000000;
+$white: #ffffff;
+$green: #03FFA5;
+
+.footer{
+    background-color: $black;
+
+    &__newsletter{
+        padding: 136px;
+    }
+
+    &__title{
+        color: $white;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+
+        &:before{
+            content: '//';
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 24px;
+            color: $green;
+            position: absolute;
+            left: 0px;
+            top: 10px;
+        }
+    }
+
+    &__notes{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    &__wpp{
+        max-width: 142px;
+        height: 27px;
+    }
+
+    &__socials{
+
+        &-list{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-item{
+            margin: 0 15px;
+
+            svg{
+                color: $white;
+            }
+        }
+    }
+}

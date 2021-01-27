@@ -1,0 +1,29 @@
+$grey: #F2F2F2;
+
+.heighlights{
+    background-color: $grey;
+    display: flex;
+    align-items: center;
+
+    .grid{
+        align-items: center;
+    }
+
+    [class*="__col"]{
+        margin-top: 2%;
+        position: relative;
+    }
+
+    &__ico{
+        position: absolute;
+        right: 17%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
