@@ -4,7 +4,7 @@ import './Header.scss';
 import { RiSearchLine } from 'react-icons/ri';
 import { FiShoppingCart } from 'react-icons/fi';
 
-function Header (){
+function Header () {
 	return(
 		<div className="header">
 			<div className="header__content">
