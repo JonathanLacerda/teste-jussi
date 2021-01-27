@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from '../Button/Button';
+import Shelf from '../Shelf/Shelf';
 import './Banner.scss';
 
 import product01 from '../../images/product-01.png';
@@ -7,6 +8,23 @@ import product02 from '../../images/product-02.png';
 import product03 from '../../images/product-03.png';
 
 function Banner () {
+
+	const images = [
+		{
+			'image': product01,
+			'label': 'Comprar em 12x'
+		},
+		{
+			'image': product02,
+			'label': 'Mais Detalhes'
+		},
+
+		{
+			'image': product03,
+			'label': 'Adicionar à sacola'
+		}
+	]
+
 	return (
 		<>
 			<div className="banner">
@@ -25,27 +43,21 @@ function Banner () {
 							/>
 						</div>
 						<div className="banner__products grid__col-6">
-							<div className="banner__product">
-								<img src={product01} alt=""/>
-								<Button
-									className="teste"
-									label="Comprar em 12x"
-								/>
-							</div>
-							<div className="banner__product">
-								<img src={product02} alt=""/>
-								<Button
-									className="teste"
-									label="Mais Detalhes"
-								/>
-							</div>
-							<div className="banner__product">
-								<img src={product03} alt=""/>
-								<Button
-									className="teste"
-									label="Adicionar à sacola"
-								/>
-							</div>
+							{
+								images.map((value) => {
+									return <>
+										<Shelf
+											toSell={false}
+											image={value.image}
+										>
+											<Button
+													className="teste"
+													label={value.label}
+												/>
+										</Shelf>
+									</>
+								})
+							}
 						</div>
 					</div>
 				</div>
