@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/JonathanLacerda/teste-jussi/static/css/main.c084430c.chunk.css",
+    "main.js": "/JonathanLacerda/teste-jussi/static/js/main.aa947bee.chunk.js",
+    "main.js.map": "/JonathanLacerda/teste-jussi/static/js/main.aa947bee.chunk.js.map",
+    "runtime-main.js": "/JonathanLacerda/teste-jussi/static/js/runtime-main.17dd5084.js",
+    "runtime-main.js.map": "/JonathanLacerda/teste-jussi/static/js/runtime-main.17dd5084.js.map",
+    "static/js/2.82ca340f.chunk.js": "/JonathanLacerda/teste-jussi/static/js/2.82ca340f.chunk.js",
+    "static/js/2.82ca340f.chunk.js.map": "/JonathanLacerda/teste-jussi/static/js/2.82ca340f.chunk.js.map",
+    "index.html": "/JonathanLacerda/teste-jussi/index.html",
+    "static/css/main.c084430c.chunk.css.map": "/JonathanLacerda/teste-jussi/static/css/main.c084430c.chunk.css.map",
+    "static/js/2.82ca340f.chunk.js.LICENSE.txt": "/JonathanLacerda/teste-jussi/static/js/2.82ca340f.chunk.js.LICENSE.txt",
+    "static/media/image-jussi.423bed4b.png": "/JonathanLacerda/teste-jussi/static/media/image-jussi.423bed4b.png",
+    "static/media/logoJussiVectorGreen.e005e337.svg": "/JonathanLacerda/teste-jussi/static/media/logoJussiVectorGreen.e005e337.svg",
+    "static/media/product-01.3f5a143a.png": "/JonathanLacerda/teste-jussi/static/media/product-01.3f5a143a.png",
+    "static/media/product-02.f0590614.png": "/JonathanLacerda/teste-jussi/static/media/product-02.f0590614.png",
+    "static/media/product-03.d11d5608.png": "/JonathanLacerda/teste-jussi/static/media/product-03.d11d5608.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17dd5084.js",
+    "static/js/2.82ca340f.chunk.js",
+    "static/css/main.c084430c.chunk.css",
+    "static/js/main.aa947bee.chunk.js"
+  ]
+}
