@@ -2,9 +2,12 @@ $green: #03FFA5;
 $white: #ffffff;
 
 .newsletter{
-    min-width: 500px;
     position: relative;
     overflow: hidden;
+
+    @media screen and (min-width: 600px) {
+        min-width: 500px;
+    }
 
     &__input{
         background-color: transparent;

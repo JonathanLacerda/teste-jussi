@@ -4,27 +4,52 @@ $black: #000000;
     display: flex;
     justify-content: space-between;
     padding: 20px 25px;
+    flex-direction: column;
+
+    @media screen and (min-width: 600px) {
+        flex-direction: row;
+    }
 
     &__content{
-        display: flex;
         align-items: center;
+        display: flex;
+        margin: 15px 0;
+        flex-direction: column;
+
+        @media screen and (min-width: 600px) {
+            flex-direction: row;
+        }
     }
 
     &__list{
         display: flex;
         margin-left: 30px;
+        margin-top: 30px;
+
+        @media screen and (min-width: 600px) {
+            margin-top: 0;
+        }
     }
 
     &__list{
 
         &-link{
             padding: 0 15px;
+            color: $black;
+            text-decoration: none;
+            display: inline-flex;
+            justify-self: center;
             cursor: pointer;
         }
     }
 
     &__login{
         margin: 0 32px 0 80px;
+        display: none;
+
+        @media screen and (min-width: 600px) {
+            display: block;
+        }
 
         &-link{
             font-size: 16px;
@@ -34,6 +59,11 @@ $black: #000000;
     }
 
     &__cart{
+        display: none;
+
+        @media screen and (min-width: 600px) {
+            display: block;
+        }
 
         &-ico{
             font-size: 25px;

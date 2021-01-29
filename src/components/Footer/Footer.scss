@@ -6,7 +6,11 @@ $green: #03FFA5;
     background-color: $black;
 
     &__newsletter{
-        padding: 136px 136px 115px;
+        padding: 40px;
+
+        @media screen and (min-width: 600px) {
+            padding: 136px 136px 115px;
+        }
     }
 
     &__title{
@@ -25,7 +29,7 @@ $green: #03FFA5;
             line-height: 24px;
             color: $green;
             position: absolute;
-            left: 0px;
+            left: -30px;
             top: 10px;
         }
     }

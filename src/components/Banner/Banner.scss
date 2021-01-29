@@ -5,7 +5,11 @@ $gray: #F2F2F2;
 
 .banner{
     background-color: $green;
-    padding: 80px;
+    padding: 30px 15px 30px 80px;
+
+    @media screen and (min-width: 600px) {
+        padding: 80px;
+    }
 
     &__cta{
         display: flex;
@@ -14,12 +18,18 @@ $gray: #F2F2F2;
 
     &__title{
         font-weight: 500;
-        font-size: 64px;
-        line-height: 77px;
+        font-size: 36px;
+        line-height: 36px;
+        padding-right: 15px;
         text-transform: uppercase;
         color: $black;
-        padding-right: 90px;
         position: relative;
+
+        @media screen and (min-width: 600px) {
+            font-size: 64px;
+            line-height: 77px;
+            padding-right: 90px;
+        }
 
         &::before{
             content: '//';
