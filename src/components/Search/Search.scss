@@ -1,0 +1,82 @@
+$white: #FFFFFF;
+$black: #000000;
+$grey: #F2F2F2;
+$pink: #EE0E7D;
+
+.header__search{
+    position: relative;
+
+    &-input{
+        background: transparent;
+        border: 1px solid $grey;
+        box-sizing: border-box;
+        border-radius: 24px;
+        min-width: 240px;
+        padding: 10px 20px;
+        transition: all .2s;
+        outline: none;
+
+        &:focus,
+        &.hasContent{
+            border: 1px solid $pink;
+        }
+
+        &.hasContent{
+            border-bottom: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    &-ico{
+        font-size: 20px;
+        z-index: -1;
+    }
+
+    &-result{
+        background-color: $white;
+        border: 1px solid $pink;
+        border-top: 0;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        position: absolute;
+        z-index: 3;
+        padding: 15px;
+        opacity: 0;
+        transition: opacity .2s;
+        width: 87%;
+
+        &.in{
+            opacity: 1;
+        }
+    }
+
+    &-item{
+        font-weight: bold;
+        padding: 5px 0;
+    }
+
+    &-link{
+        color: $black;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.header__search-input::placeholder {
+    color:$pink;
+    font-size: 16px;
+}
+
+.header__search-input:-ms-input-placeholder {
+    color:$pink;
+    font-size: 16px;
+}
+
+.header__search-input::-ms-input-placeholder {
+    color:$pink;
+    font-size: 16px;
+}

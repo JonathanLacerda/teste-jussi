@@ -7,6 +7,7 @@ function Button(props) {
 			<button
 				className={props.className}>
 				{props.label}
+				{props.children}
 			</button>
 		</>
 	)

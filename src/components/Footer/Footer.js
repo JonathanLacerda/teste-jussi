@@ -20,17 +20,17 @@ function Footer() {
 				<div className="footer__socials">
 					<ul className="footer__socials-list">
 						<li className="footer__socials-item">
-							<a target="_blank" href="https://www.facebook.com/">
+							<a rel="noreferrer" target="_blank" href="https://www.facebook.com/">
 								<GrFacebookOption />
 							</a>
 						</li>
 						<li className="footer__socials-item">
-							<a target="_blank" href="https://www.facebook.com/">
+							<a rel="noreferrer" target="_blank" href="https://www.facebook.com/">
 								<GrInstagram />
 							</a>
 						</li>
 						<li className="footer__socials-item">
-							<a target="_blank" href="https://www.facebook.com/">
+							<a rel="noreferrer" target="_blank" href="https://www.facebook.com/">
 								<GrLinkedinOption />
 							</a>
 						</li>
